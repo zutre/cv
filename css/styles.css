@@ -95,6 +95,10 @@ h3 {
   width: 55%;
 }
 
+.profile {
+  width: 30%;
+  margin: auto;
+}
 
 button {
    background: #66BFBF;
