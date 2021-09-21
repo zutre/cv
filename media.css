@@ -1,0 +1,48 @@
+@media screen and (max-width: 800px) {
+  h1 {
+    padding-left: 100px;
+  }
+
+  header h3 {
+    padding-left: 100px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "footer-1 footer-1"
+      "footer-2 footer-3";
+  }
+  footer .icon {
+    display: none;
+  }
+
+  .city {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .navbar a {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .footer-container {
+    display: block;
+  }
+  .footer-3 {
+    padding-top: 20px;
+  }
+
+  .icon {
+    padding: 20px 30px 20px 0;
+    /* max-width: 50px; */
+    width: 50px;
+    /* background-color: black; */
+  }
+  .text {
+    font-size: 1.5rem;
+  }
+}

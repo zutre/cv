@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLOR */
+  --primary-color: rgb(173, 170, 170);
+  --dark-color: rgb(80, 77, 77);
+  --background-color: rgb(0, 0, 0);
+
+  /* FONTS */
+  --roboto: "Roboto", sans-serif;
+  --sans: "Open Sans Condensed", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--roboto);
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+}
+
+.hamburger-menu {
+  /* display: block; */
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  background-color: var(--dark-color);
+  height: 100%;
+  width: 100%;
+}
+
+.menu {
+  margin-top: 50px;
+  left: auto;
+  display: block;
+  /* display: flex;
+  flex-direction: column; */
+}
+.menu a {
+  padding: 0 0 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  color: wheat;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+}
+.link {
+  text-align: center;
+}
+
+.menu a:hover {
+  color: black;
+  background-color: var(--primary-color);
+}
+
+.exit {
+  position: relative;
+  padding: 20px;
+  cursor: pointer;
+}
+.exit a:hover {
+  color: black;
+}
+.exit a {
+  position: absolute;
+  right: 20px;
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* HEADER******************************************** */
+
+.header-1 {
+  display: flex;
+  background-color: var(--dark-color);
+}
+
+.header-2 {
+  width: 80%;
+}
+.icon {
+  padding: 20px 50px;
+  width: 20%;
+  /* background-color: black; */
+}
+
+h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 200px;
+  font-size: 3rem;
+  color: wheat;
+}
+header h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 200px;
+  font-size: 1.5rem;
+  color: wheat;
+}
+
+.navbar {
+  background-color: rgb(29, 28, 28);
+  display: flex;
+  justify-content: center;
+}
+
+.non-actual {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px;
+  color: wheat;
+  font-weight: 900;
+}
+.actual {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px;
+  color: black;
+  font-weight: 900;
+  background-color: var(--dark-color);
+  cursor: text;
+}
+
+.navbar a:hover {
+  background-color: var(--dark-color);
+  color: black;
+}
+
+.hamburger {
+  margin: 5px auto 5px 25px;
+  display: none;
+}
+.ham {
+  background-color: var(--dark-color);
+  width: 40px;
+  padding: 5px 5px 5px 5px;
+  cursor: pointer;
+}
+.hamburger p {
+  border-bottom: solid white;
+  height: 10px;
+}
+.hamburger h3 {
+  color: var(--primary-color);
+  margin-left: 15px;
+  padding: 10px;
+}
+
+/* PICTURES*********************************************** */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: var(--dark-color);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Main************************************************************* */
+
+.main-container h2 {
+  padding: 20px;
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--sans);
+}
+.main-container p {
+  line-height: 1.5rem;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+.factory-1 {
+  float: left;
+  max-width: 50%;
+  padding-right: 10px;
+}
+
+.factory-2 {
+  float: right;
+  max-width: 50%;
+  padding-left: 10px;
+}
+
+.city-1,
+.city-2,
+.city-3,
+.city-4 {
+  padding: 10px;
+  text-align: center;
+}
+
+.city {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 20px;
+}
+
+.city h3 {
+  font-family: var (--sans);
+  font-size: 1.2rem;
+  padding: 10px 10px 0 10px;
+}
+.city p {
+  text-align: justify;
+  padding-bottom: 10px;
+}
+.city img {
+  width: 100%;
+}
+
+.city a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: rgb(82, 145, 228);
+  margin-top: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+/* FOOTER********************************************************************** */
+
+footer {
+  background-color: var(--dark-color);
+}
+
+footer h2 {
+  font-size: 2rem;
+  padding: 20px 0 20px 20px;
+  color: white;
+}
+
+footer h3 {
+  color: white;
+  padding: 10px;
+}
+
+footer li {
+  color: white;
+  line-height: 1.5rem;
+  padding-left: 10px;
+  list-style-type: none;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "footer-1 footer-1 footer-4"
+    "footer-2 footer-3 footer-4";
+  padding-bottom: 20px;
+}
+
+.footer-1 {
+  grid-area: footer-1;
+}
+
+.footer-2 {
+  grid-area: footer-2;
+}
+.footer-3 {
+  grid-area: footer-3;
+}
+.footer-4 {
+  grid-area: footer-4;
+  position: relative;
+}
+
+footer .icon {
+  position: absolute;
+  right: 120px;
+  margin: auto;
+  color: white;
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+  padding: 20px 0 10px 0;
+}
+hr {
+  border-width: 0.3px;
+}
